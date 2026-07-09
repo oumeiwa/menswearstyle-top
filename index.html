@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menswear Style — Honest Reviews & Style Guide for Men</title>
+  <meta name="description" content="In-depth reviews of men's suits, shoes, watches, and accessories. Honest buying guides to help you dress better and spend smarter." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="canonical" href="https://menswearstyle.top/" />
+  <meta property="og:title" content="Menswear Style — Honest Reviews & Style Guide for Men" />
+  <meta property="og:description" content="In-depth reviews of men's suits, shoes, watches, and accessories." />
+  <meta property="og:url" content="https://menswearstyle.top/" />
+  <meta property="og:type" content="website" />
+  <style>
+    /* ---- Hero with background image ---- */
+    .hero {
+      background: linear-gradient(135deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 100%), url('images/hero.png');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+    }
+
+    .hero h1 { font-size: 3rem; }
+
+    /* ---- Card image backgrounds ---- */
+    .card-img {
+      background-size: cover !important;
+      background-position: center !important;
+    }
+
+    /* ---- Section padding tweaks ---- */
+    .featured { padding: 64px 0; }
+    .featured .section-title { text-align: center; }
+    .featured .section-title::after { left: 50%; transform: translateX(-50%); }
+
+    /* ---- Category with images ---- */
+    .cat-card-img {
+      width: 100%;
+      height: 200px;
+      border-radius: var(--radius) var(--radius) 0 0;
+      background-size: cover;
+      background-position: center;
+    }
+    .cat-card { padding: 0; overflow: hidden; }
+    .cat-card .cat-info { padding: 20px 16px 24px; }
+    .cat-card h3 { margin-bottom: 4px; }
+    .cat-card .count { font-size: 0.82rem; color: var(--text-light); }
+
+    /* ---- Responsive hero ---- */
+    @media (max-width: 768px) {
+      .hero { padding: 64px 0; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo"><a href="/">Mens<span>wear</span>Style</a></div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Style That <span>Speaks</span>.<br />Reviews You Can <span>Trust</span>.</h1>
+      <p>We test, compare, and review the best menswear — from tailored suits to everyday sneakers. No fluff, just honest advice to upgrade your wardrobe.</p>
+      <a href="#reviews" class="hero-cta">Browse All Reviews →</a>
+    </div>
+  </section>
+
+  <!-- ===== Featured Reviews ===== -->
+  <section class="featured" id="reviews">
+    <div class="container">
+      <h2 class="section-title">Latest Reviews</h2>
+      <div class="review-grid">
+
+        <article class="review-card">
+          <div class="card-img" style="background-image:url('images/review-1.jpg')">
+            <span class="badge">Editor's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="cat-tag">Dress Shoes</div>
+            <h3><a href="#">Best Oxford Dress Shoes of 2026: 7 Top Brands Tested</a></h3>
+            <p>From Allen Edmonds to Meermin — we put the finest oxfords through a 30-day real-world test to find the perfect balance of comfort, craftsmanship, and value.</p>
+            <div class="card-footer">
+              <span class="rating"><span class="stars">★★★★★</span> 4.8</span>
+              <a href="#" class="read-more">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="card-img" style="background-image:url('images/review-2.jpg')">
+            <span class="badge">Best Value</span>
+          </div>
+          <div class="card-body">
+            <div class="cat-tag">Suits</div>
+            <h3><a href="#">Best Off-the-Rack Suits Under $500 in 2026</a></h3>
+            <p>You don't need a bespoke tailor to look sharp. We reviewed 12 budget-friendly suits to find the ones that fit, feel, and look like they cost twice as much.</p>
+            <div class="card-footer">
+              <span class="rating"><span class="stars">★★★★½</span> 4.5</span>
+              <a href="#" class="read-more">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="card-img" style="background-image:url('images/review-3.jpg')">
+            <span class="badge">Top Rated</span>
+          </div>
+          <div class="card-body">
+            <div class="cat-tag">Watches</div>
+            <h3><a href="#">5 Best Dive Watches Under $1,000: Diver Tested</a></h3>
+            <p>Seiko, Orient, Citizen, and more — we took these dive watches to 100 meters (and the local pool) to see which one deserves your wrist.</p>
+            <div class="card-footer">
+              <span class="rating"><span class="stars">★★★★☆</span> 4.3</span>
+              <a href="#" class="read-more">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="card-img" style="background-image:url('images/review-4.jpg')"></div>
+          <div class="card-body">
+            <div class="cat-tag">Accessories</div>
+            <h3><a href="#">Best Leather Wallets: Slim, Smart & Built to Last</a></h3>
+            <p>From Bellroy to Tanner Goods — we carried every wallet for 60 days to find the perfect everyday carry that won't bulge your back pocket.</p>
+            <div class="card-footer">
+              <span class="rating"><span class="stars">★★★★½</span> 4.6</span>
+              <a href="#" class="read-more">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="card-img" style="background-image:url('images/review-5.jpg')"></div>
+          <div class="card-body">
+            <div class="cat-tag">Sneakers</div>
+            <h3><a href="#">Minimalist White Sneakers: 8 Pairs Compared</a></h3>
+            <p>The ultimate white sneaker showdown — Common Projects, Koio, Axel Arigato, and more tested for comfort, style, and how they hold up after 3 months.</p>
+            <div class="card-footer">
+              <span class="rating"><span class="stars">★★★★☆</span> 4.4</span>
+              <a href="#" class="read-more">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="card-img" style="background-image:url('images/review-6.jpg')"></div>
+          <div class="card-body">
+            <div class="cat-tag">Accessories</div>
+            <h3><a href="#">Best Silk Ties: 10 Brands That Elevate Your Look</a></h3>
+            <p>A great tie can make or break an outfit. We tested 50+ ties from heritage brands to modern upstarts to find the best knots, fabrics, and patterns.</p>
+            <div class="card-footer">
+              <span class="rating"><span class="stars">★★★★½</span> 4.5</span>
+              <a href="#" class="read-more">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="card-img" style="background-image:url('images/review-7.jpg')"></div>
+          <div class="card-body">
+            <div class="cat-tag">Suits</div>
+            <h3><a href="#">Best Wool Blazers for Every Budget (2026)</a></h3>
+            <p>From $200 to $1,200 — the perfect blazer exists at every price point. Here's where to spend and where to save.</p>
+            <div class="card-footer">
+              <span class="rating"><span class="stars">★★★★½</span> 4.5</span>
+              <a href="#" class="read-more">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="card-img" style="background-image:url('images/review-8.jpg')"></div>
+          <div class="card-body">
+            <div class="cat-tag">Accessories</div>
+            <h3><a href="#">Best Leather Bags & Briefcases for Men</a></h3>
+            <p>Filson, Saddleback, and more — the best leather bags that age beautifully and last a lifetime.</p>
+            <div class="card-footer">
+              <span class="rating"><span class="stars">★★★★½</span> 4.7</span>
+              <a href="#" class="read-more">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Categories with Images ===== -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="cat-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+
+        <div class="cat-card">
+          <div class="cat-card-img" style="background-image:url('images/featured-1.png')"></div>
+          <div class="cat-info">
+            <h3>Suits & Blazers</h3>
+            <span class="count">12 reviews</span>
+          </div>
+        </div>
+
+        <div class="cat-card">
+          <div class="cat-card-img" style="background-image:url('images/featured-2.png')"></div>
+          <div class="cat-info">
+            <h3>Dress Shoes</h3>
+            <span class="count">9 reviews</span>
+          </div>
+        </div>
+
+        <div class="cat-card">
+          <div class="cat-card-img" style="background:#dce3e8;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#5a6b78;">
+            &#x23F0;
+          </div>
+          <div class="cat-info">
+            <h3>Watches</h3>
+            <span class="count">7 reviews</span>
+          </div>
+        </div>
+
+        <div class="cat-card">
+          <div class="cat-card-img" style="background:#e2d9cc;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#736653;">
+            &#x1F9E2;
+          </div>
+          <div class="cat-info">
+            <h3>Accessories</h3>
+            <span class="count">15 reviews</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="featured" id="about" style="background:var(--bg-alt);">
+    <div class="container" style="max-width:720px;text-align:center;">
+      <h2 class="section-title" style="text-align:center;">About Menswear Style</h2>
+      <p style="font-size:1.05rem;line-height:1.8;margin-bottom:16px;">
+        Menswear Style was founded with a simple mission: <strong>help men dress better</strong> without breaking the bank.
+        We purchase every product we review — no free samples, no sponsored placements. Every rating is the result of
+        real-world testing, not a press release.
+      </p>
+      <p style="font-size:1.05rem;line-height:1.8;margin-bottom:16px;">
+        Our team includes style editors, former retail buyers, and everyday guys who just want to look good.
+        We cover everything from tailored suits and dress shoes to casual sneakers, watches, and grooming essentials.
+      </p>
+      <p style="font-size:0.9rem;color:var(--text-light);">
+        <strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. We may earn a small commission
+        at no extra cost to you. All reviews remain independent and unbiased.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Newsletter ===== -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Never Miss a Review</h2>
+      <p>Get the latest style guides, deals, and honest reviews delivered to your inbox every week.</p>
+      <form class="newsletter-form" action="#" method="post">
+        <label for="newsletter-email" class="sr-only">Your email address</label>
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Mens<span>wear</span>Style</h3>
+          <p>Honest, in-depth reviews of men's clothing, shoes, watches, and accessories. We help you dress better and spend smarter.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Browse</h4>
+          <ul>
+            <li><a href="#reviews">Latest Reviews</a></li>
+            <li><a href="#categories">Suits & Blazers</a></li>
+            <li><a href="#categories">Shoes</a></li>
+            <li><a href="#categories">Watches</a></li>
+            <li><a href="#categories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#about">Affiliate Disclosure</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#about">Privacy Policy</a></li>
+            <li><a href="#about">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 MenswearStyle.top — All rights reserved.</span>
+        <span class="disclaimer">As an Amazon Associate we earn from qualifying purchases. All reviews remain independent.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
