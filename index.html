@@ -12,45 +12,15 @@
   <meta property="og:url" content="https://menswearstyle.top/" />
   <meta property="og:type" content="website" />
   <style>
-    /* ---- Hero with background image ---- */
     .hero {
       background: linear-gradient(135deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 100%), url('images/hero.png');
       background-size: cover;
       background-position: center;
-      padding: 100px 0;
+      color: #fff;
     }
-
-    .hero h1 { font-size: 3rem; }
-
-    /* ---- Card image backgrounds ---- */
-    .card-img {
-      background-size: cover !important;
-      background-position: center !important;
-    }
-
-    /* ---- Section padding tweaks ---- */
-    .featured { padding: 64px 0; }
-    .featured .section-title { text-align: center; }
-    .featured .section-title::after { left: 50%; transform: translateX(-50%); }
-
-    /* ---- Category with images ---- */
-    .cat-card-img {
-      width: 100%;
-      height: 200px;
-      border-radius: var(--radius) var(--radius) 0 0;
-      background-size: cover;
-      background-position: center;
-    }
-    .cat-card { padding: 0; overflow: hidden; }
-    .cat-card .cat-info { padding: 20px 16px 24px; }
-    .cat-card h3 { margin-bottom: 4px; }
-    .cat-card .count { font-size: 0.82rem; color: var(--text-light); }
-
-    /* ---- Responsive hero ---- */
-    @media (max-width: 768px) {
-      .hero { padding: 64px 0; }
-      .hero h1 { font-size: 2rem; }
-    }
+    .card-img { background-size: cover !important; background-position: center !important; }
+    .cat-card-img { width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius) var(--radius) 0 0; }
+    .cat-grid a { color: inherit; }
   </style>
 </head>
 <body>
@@ -73,17 +43,22 @@
 
   <!-- ===== Hero ===== -->
   <section class="hero">
-    <div class="container">
-      <h1>Style That <span>Speaks</span>.<br />Reviews You Can <span>Trust</span>.</h1>
-      <p>We test, compare, and review the best menswear — from tailored suits to everyday sneakers. No fluff, just honest advice to upgrade your wardrobe.</p>
-      <a href="#reviews" class="hero-cta">Browse All Reviews →</a>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1>Style That <span>Speaks</span>.<br />Reviews You Can <span>Trust</span>.</h1>
+        <p>We test, compare, and review the best menswear — from tailored suits to everyday sneakers. No fluff, just honest advice to upgrade your wardrobe.</p>
+        <a href="#reviews" class="hero-cta">Browse All Reviews &rarr;</a>
+      </div>
     </div>
   </section>
 
   <!-- ===== Featured Reviews ===== -->
   <section class="featured" id="reviews">
     <div class="container">
-      <h2 class="section-title">Latest Reviews</h2>
+      <div class="section-header">
+        <h2 class="section-title">Latest Reviews</h2>
+        <p class="section-subtitle">In-depth, hands-on testing of the best menswear &amp; accessories</p>
+      </div>
       <div class="review-grid">
 
         <article class="review-card">
@@ -203,7 +178,10 @@
   <!-- ===== Categories with Images ===== -->
   <section class="categories" id="categories">
     <div class="container">
-      <h2 class="section-title">Shop by Category</h2>
+      <div class="section-header">
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">Find the perfect piece for every occasion</p>
+      </div>
       <div class="cat-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
 
         <div class="cat-card">
@@ -247,22 +225,14 @@
   </section>
 
   <!-- ===== About Section ===== -->
-  <section class="featured" id="about" style="background:var(--bg-alt);">
-    <div class="container" style="max-width:720px;text-align:center;">
-      <h2 class="section-title" style="text-align:center;">About Menswear Style</h2>
-      <p style="font-size:1.05rem;line-height:1.8;margin-bottom:16px;">
-        Menswear Style was founded with a simple mission: <strong>help men dress better</strong> without breaking the bank.
-        We purchase every product we review — no free samples, no sponsored placements. Every rating is the result of
-        real-world testing, not a press release.
-      </p>
-      <p style="font-size:1.05rem;line-height:1.8;margin-bottom:16px;">
-        Our team includes style editors, former retail buyers, and everyday guys who just want to look good.
-        We cover everything from tailored suits and dress shoes to casual sneakers, watches, and grooming essentials.
-      </p>
-      <p style="font-size:0.9rem;color:var(--text-light);">
-        <strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. We may earn a small commission
-        at no extra cost to you. All reviews remain independent and unbiased.
-      </p>
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header"><h2 class="section-title">About Menswear Style</h2></div>
+      <div class="about-text">
+        <p>Menswear Style was founded with a simple mission: <strong>help men dress better</strong> without breaking the bank. We purchase every product we review — no free samples, no sponsored placements. Every rating is the result of real-world testing, not a press release.</p>
+        <p>Our team includes style editors, former retail buyers, and everyday guys who just want to look good. We cover everything from tailored suits and dress shoes to casual sneakers, watches, and grooming essentials.</p>
+      </div>
+      <p class="disclaimer"><strong>Affiliate Disclosure:</strong> Some links on this site are affiliate links. We may earn a small commission at no extra cost to you. All reviews remain independent and unbiased.</p>
     </div>
   </section>
 
@@ -288,10 +258,10 @@
           <p>Honest, in-depth reviews of men's clothing, shoes, watches, and accessories. We help you dress better and spend smarter.</p>
         </div>
         <div class="footer-col">
-          <h4>Browse</h4>
+          <h4>Reviews</h4>
           <ul>
             <li><a href="#reviews">Latest Reviews</a></li>
-            <li><a href="#categories">Suits & Blazers</a></li>
+            <li><a href="#categories">Suits &amp; Blazers</a></li>
             <li><a href="#categories">Shoes</a></li>
             <li><a href="#categories">Watches</a></li>
             <li><a href="#categories">Accessories</a></li>
@@ -302,13 +272,15 @@
           <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#about">Affiliate Disclosure</a></li>
+            <li><a href="#about">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Legal</h4>
+          <h4>Follow</h4>
           <ul>
-            <li><a href="#about">Privacy Policy</a></li>
-            <li><a href="#about">Terms of Use</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Flipboard</a></li>
           </ul>
         </div>
       </div>
